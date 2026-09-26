@@ -18,12 +18,11 @@ jobs:
           java-version: "17"
           cache: gradle
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
+      # O runner ubuntu-latest já traz o Android SDK pré-instalado
+      # (ANDROID_SDK_ROOT); não é preciso action extra de setup.
       - name: Build debug APK
         run: ./gradlew :app:assembleDebug --stacktrace
 
