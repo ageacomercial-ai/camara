@@ -2,8 +2,8 @@ package com.agea.camerapro
 
 import androidx.camera.core.CameraEffect
 import androidx.camera.core.SurfaceProcessor
+import androidx.core.util.Consumer
 import java.util.concurrent.Executor
-import java.util.function.Consumer
 
 /**
  * Subclasse concreta de CameraEffect.
@@ -17,8 +17,8 @@ class FilterEffect(
     executor: Executor,
     onError: (Throwable) -> Unit
 ) : CameraEffect(
-    PREVIEW or VIDEO_CAPTURE,
+    CameraEffect.PREVIEW or CameraEffect.VIDEO_CAPTURE,
     executor,
     surfaceProcessor,
-    Consumer { throwable -> onError(throwable) }
+    Consumer<Throwable> { throwable: Throwable -> onError(throwable) }
 )
