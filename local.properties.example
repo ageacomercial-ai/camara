@@ -1,0 +1,5 @@
+# Copia este ficheiro para local.properties e ajusta o caminho do SDK.
+# Windows exemplo: sdk.dir=C\:\\Users\\Dell\\AppData\\Local\\Android\\Sdk
+# macOS exemplo:   sdk.dir=/Users/teu-nome/Library/Android/sdk
+# Linux exemplo:   sdk.dir=/home/teu-nome/Android/Sdk
+sdk.dir=C\:\\Users\\Dell\\AppData\\Local\\Android\\Sdk

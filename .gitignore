@@ -1,0 +1,19 @@
+# Gradle / Android
+.gradle/
+local.properties
+*.iml
+.idea/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.hprof
+
+# Keystore / segredos — NUNCA commitar
+*.jks
+*.keystore
+
+# SO
+.DS_Store
+Thumbs.db
